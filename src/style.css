@@ -466,9 +466,7 @@ body {
 .about-img {
   width: 100%;
   height: auto;
-  max-height: 580px;
-  object-fit: contain;
-  background-color: #09090b;
+  object-fit: cover;
   display: block;
 }
 

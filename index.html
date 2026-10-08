@@ -48,9 +48,13 @@
         </nav>
 
         <div class="nav-actions">
-          <button class="btn btn-primary schedule-btn" id="openBookingBtn">
-            <span class="full-schedule-text">Schedule Estimate</span>
-            <span class="short-schedule-text">Estimate</span>
+          <div class="location-tag">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <span>Sunnyside, NY</span>
+          </div>
+          <button class="btn btn-primary-dark schedule-btn" id="openBookingBtn">
+            <span class="full-schedule-text">Book Now</span>
+            <span class="short-schedule-text">Book</span>
           </button>
           <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Menu">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
@@ -188,104 +192,114 @@
         <!-- Service Card 1 -->
         <div class="service-card" data-service="Collision & Body Repair">
           <div class="service-icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.5 2.8C2.1 11.2 2 11.6 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></svg>
+            <img src="./images/instagram/ig_image_4.jpg" alt="Collision & Body Repair" style="width: 100%; height: 100%; object-fit: cover;" />
           </div>
-          <h3 class="service-card-title">Collision & Body Repair</h3>
-          <p class="service-card-desc">Full structural repair, bumper replacement, quarter panel reconstruction, and frame unibody realignment.</p>
+          <div class="service-card-body">
+            <h3 class="service-card-title">Collision & Body Repair</h3>
+            <p class="service-card-desc">Full structural repair, bumper replacement, quarter panel reconstruction, and frame unibody realignment.</p>
+            <div class="service-card-pricing">
+              <span class="price-label">Starting from:</span>
+              <span class="price-amount">$350</span>
+            </div>
+          </div>
           <div class="service-card-footer">
-            <span class="service-tag">Collision Care</span>
-            <button class="card-action-btn" aria-label="Book Collision Repair">Get Estimate &rarr;</button>
+            <button class="btn btn-secondary card-action-btn" aria-label="Configure Collision Repair">Configure</button>
+            <button class="btn btn-primary-dark card-action-btn card-book-btn" aria-label="Book Collision Repair">Book Now</button>
           </div>
         </div>
 
         <!-- Service Card 2 -->
         <div class="service-card" data-service="Custom Auto Painting">
           <div class="service-icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v6"/><path d="M12 18v4"/><path d="M4.93 10.93l4.24 4.24"/><path d="M14.83 9.17l4.24 4.24"/></svg>
+            <img src="./images/instagram/ig_image_3.jpg" alt="Custom Auto Painting" style="width: 100%; height: 100%; object-fit: cover;" />
           </div>
-          <h3 class="service-card-title">Custom Auto Painting</h3>
-          <p class="service-card-desc">Computerized color matching, full vehicle repaints, blend matching, and high-gloss clear coat finishing.</p>
+          <div class="service-card-body">
+            <h3 class="service-card-title">Custom Auto Painting</h3>
+            <p class="service-card-desc">Computerized color matching, full vehicle repaints, blend matching, and high-gloss clear coat finishing.</p>
+            <div class="service-card-pricing">
+              <span class="price-label">Starting from:</span>
+              <span class="price-amount">$450</span>
+            </div>
+          </div>
           <div class="service-card-footer">
-            <span class="service-tag">Paint Booth</span>
-            <button class="card-action-btn" aria-label="Book Auto Painting">Get Estimate &rarr;</button>
+            <button class="btn btn-secondary card-action-btn" aria-label="Configure Auto Painting">Configure</button>
+            <button class="btn btn-primary-dark card-action-btn card-book-btn" aria-label="Book Auto Painting">Book Now</button>
           </div>
         </div>
 
         <!-- Service Card 3 -->
         <div class="service-card" data-service="Dent & Scratch Removal">
           <div class="service-icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+            <img src="./images/instagram/ig_image_6.jpg" alt="Dent & Scratch Removal" style="width: 100%; height: 100%; object-fit: cover;" />
           </div>
-          <h3 class="service-card-title">Dent & Scratch Removal</h3>
-          <p class="service-card-desc">Paintless dent repair (PDR), hail damage restoration, key scratch removal, and body contour perfection.</p>
+          <div class="service-card-body">
+            <h3 class="service-card-title">Dent & Scratch Removal</h3>
+            <p class="service-card-desc">Paintless dent repair (PDR), hail damage restoration, key scratch removal, and body contour perfection.</p>
+            <div class="service-card-pricing">
+              <span class="price-label">Starting from:</span>
+              <span class="price-amount">$180</span>
+            </div>
+          </div>
           <div class="service-card-footer">
-            <span class="service-tag">Dent Repair</span>
-            <button class="card-action-btn" aria-label="Book Dent Repair">Get Estimate &rarr;</button>
+            <button class="btn btn-secondary card-action-btn" aria-label="Configure Dent Repair">Configure</button>
+            <button class="btn btn-primary-dark card-action-btn card-book-btn" aria-label="Book Dent Repair">Book Now</button>
           </div>
         </div>
 
         <!-- Service Card 4 -->
         <div class="service-card" data-service="Bumper Repair & Replacement">
           <div class="service-icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="6" rx="2"/><path d="M7 11V7a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v4"/></svg>
+            <img src="./images/instagram/ig_image_8.jpg" alt="Bumper Repair" style="width: 100%; height: 100%; object-fit: cover;" />
           </div>
-          <h3 class="service-card-title">Bumper Repair</h3>
-          <p class="service-card-desc">Plastic welding, scuff removal, sensor recalibration, and OEM bumper replacement for front & rear bumpers.</p>
+          <div class="service-card-body">
+            <h3 class="service-card-title">Bumper Repair</h3>
+            <p class="service-card-desc">Plastic welding, scuff removal, sensor recalibration, and OEM bumper replacement for front & rear bumpers.</p>
+            <div class="service-card-pricing">
+              <span class="price-label">Starting from:</span>
+              <span class="price-amount">$220</span>
+            </div>
+          </div>
           <div class="service-card-footer">
-            <span class="service-tag">Bumpers</span>
-            <button class="card-action-btn" aria-label="Book Bumper Repair">Get Estimate &rarr;</button>
+            <button class="btn btn-secondary card-action-btn" aria-label="Configure Bumper Repair">Configure</button>
+            <button class="btn btn-primary-dark card-action-btn card-book-btn" aria-label="Book Bumper Repair">Book Now</button>
           </div>
         </div>
 
         <!-- Service Card 5 -->
         <div class="service-card" data-service="Insurance Claims Assistance">
           <div class="service-icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+            <img src="./images/instagram/ig_image_10.jpg" alt="Insurance Claims" style="width: 100%; height: 100%; object-fit: cover;" />
           </div>
-          <h3 class="service-card-title">Insurance Claims</h3>
-          <p class="service-card-desc">We work directly with Geico, Progressive, State Farm, Allstate, and all insurance providers to streamline your claim.</p>
+          <div class="service-card-body">
+            <h3 class="service-card-title">Insurance Claims</h3>
+            <p class="service-card-desc">We work directly with Geico, Progressive, State Farm, Allstate, and all insurance providers to streamline your claim.</p>
+            <div class="service-card-pricing">
+              <span class="price-label">Claims Handling:</span>
+              <span class="price-amount">Direct $0 Out-Of-Pocket</span>
+            </div>
+          </div>
           <div class="service-card-footer">
-            <span class="service-tag">Hassle-Free</span>
-            <button class="card-action-btn" aria-label="Book Insurance Assistance">Get Estimate &rarr;</button>
+            <button class="btn btn-secondary card-action-btn" aria-label="Configure Insurance Claims">Configure</button>
+            <button class="btn btn-primary-dark card-action-btn card-book-btn" aria-label="Book Insurance Claims">Book Now</button>
           </div>
         </div>
 
         <!-- Service Card 6 -->
         <div class="service-card" data-service="Paint Correction & Detailing">
           <div class="service-icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <img src="./images/instagram/ig_image_5.jpg" alt="Paint Correction" style="width: 100%; height: 100%; object-fit: cover;" />
           </div>
-          <h3 class="service-card-title">Paint Correction</h3>
-          <p class="service-card-desc">Swirl mark removal, wet sanding, oxidation treatment, and ceramic coating protection for lasting shine.</p>
+          <div class="service-card-body">
+            <h3 class="service-card-title">Paint Correction</h3>
+            <p class="service-card-desc">Swirl mark removal, wet sanding, oxidation treatment, and ceramic coating protection for lasting shine.</p>
+            <div class="service-card-pricing">
+              <span class="price-label">Starting from:</span>
+              <span class="price-amount">$290</span>
+            </div>
+          </div>
           <div class="service-card-footer">
-            <span class="service-tag">Detailing</span>
-            <button class="card-action-btn" aria-label="Book Paint Correction">Get Estimate &rarr;</button>
-          </div>
-        </div>
-
-        <!-- Service Card 7 -->
-        <div class="service-card" data-service="Wheel & Rim Restoration">
-          <div class="service-icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><path d="M12 2v20M2 12h20"/></svg>
-          </div>
-          <h3 class="service-card-title">Wheel Restoration</h3>
-          <p class="service-card-desc">Curb rash repair, alloy wheel refinishing, custom powder coating, and rim bend straightening.</p>
-          <div class="service-card-footer">
-            <span class="service-tag">Rims & Wheels</span>
-            <button class="card-action-btn" aria-label="Book Wheel Restoration">Get Estimate &rarr;</button>
-          </div>
-        </div>
-
-        <!-- Service Card 8 -->
-        <div class="service-card" data-service="Free Estimate & Inspection">
-          <div class="service-icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-          </div>
-          <h3 class="service-card-title">Free Body Estimate</h3>
-          <p class="service-card-desc">Bring your vehicle in or send photos for a fast, free, itemized collision estimate with no obligations.</p>
-          <div class="service-card-footer">
-            <span class="service-tag">Free Quote</span>
-            <button class="card-action-btn" aria-label="Book Free Estimate">Get Estimate &rarr;</button>
+            <button class="btn btn-secondary card-action-btn" aria-label="Configure Paint Correction">Configure</button>
+            <button class="btn btn-primary-dark card-action-btn card-book-btn" aria-label="Book Paint Correction">Book Now</button>
           </div>
         </div>
       </div>

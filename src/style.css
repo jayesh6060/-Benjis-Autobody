@@ -1436,8 +1436,33 @@ body {
     grid-template-columns: 1fr;
   }
 
+  .hero-cta-group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 8px;
+    width: 100%;
+  }
+
+  .hero-cta-group .btn {
+    flex: 1;
+    padding: 12px 6px;
+    font-size: 10px;
+    text-align: center;
+    white-space: nowrap;
+    justify-content: center;
+  }
+
   .trust-container {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px 10px;
+  }
+
+  .trust-item {
+    justify-content: flex-start;
+    font-size: 10px;
+    letter-spacing: 0.03em;
+    gap: 6px;
   }
 
   .form-row {

@@ -1470,13 +1470,17 @@ body {
   }
 
   .footer-container {
-    grid-template-columns: 1fr 1fr;
-    gap: 24px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px 12px;
   }
 
-  .footer-col.brand-col,
-  .footer-col.contact-col {
+  .footer-col.brand-col {
     grid-column: 1 / -1;
+    margin-bottom: 8px;
+  }
+
+  .footer-col.contact-col {
+    grid-column: auto;
   }
 
   .modal-overlay {
@@ -1491,8 +1495,31 @@ body {
 
 @media (max-width: 480px) {
   .footer-container {
-    grid-template-columns: 1fr;
-    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px 8px;
+  }
+
+  .footer-col.brand-col {
+    grid-column: 1 / -1;
+  }
+
+  .footer-heading {
+    font-size: 9px;
+    letter-spacing: 0.04em;
+    margin-bottom: 10px;
+  }
+
+  .footer-links {
+    gap: 10px;
+  }
+
+  .footer-links a,
+  .footer-info,
+  .footer-address-link,
+  .footer-phone-btn {
+    font-size: 9px;
+    line-height: 1.4;
+    word-break: break-word;
   }
 
   .brand-header-logo-img {
